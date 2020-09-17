@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\DB;
@@ -26,4 +27,5 @@ Route::get('/posts/create', [PostController::class, 'create']);
 
 Route::get('/posts/{post:slug}', [PostController::class, 'show']);
 
-
+//Route::post('/comments', [CommentController::class, 'store']);
+Route::resource('comments', CommentController::class);

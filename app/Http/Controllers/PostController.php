@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comment;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -22,8 +23,9 @@ class PostController extends Controller
 //        dd($post);
 
 //        $post = Post::whereSlug($post)->first();
-
-        return view('post.show', compact('post'));
+//        $comments = Comment::where('post_id', $post->id)->get();
+        $comments = $post->comments;
+        return view('post.show', compact('post', 'comments'));
     }
 
     public function create()
