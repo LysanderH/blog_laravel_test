@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Comment;
+use App\Models\Post;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -23,7 +24,8 @@ class CommentFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'body'=> $this->faker->text(),
+            'post_id'=> Post::factory()
         ];
     }
 }
