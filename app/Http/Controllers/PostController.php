@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StorePostRequest;
 use App\Models\Comment;
 use App\Models\Post;
 use Illuminate\Http\Request;
@@ -35,18 +36,13 @@ class PostController extends Controller
         return view('post.create');
     }
 
-    public function store()
+    public function store(StorePostRequest $request)
     {
-        
+        $validatedData = $request->validated();
+//        dd($validatedData);
+        $validatedData['slug'] = Str::slug(\request('title'));
 
-
-        $post = new Post();
-
-        $post->title = \request('title');
-        $post->slug = Str::slug(\request('title'));
-        $post->body = \request('body');
-
-        $post->save();
+        Post::create($validatedData);
 
         return redirect('/posts');
     }

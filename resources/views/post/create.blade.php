@@ -14,10 +14,16 @@
     <div>
         <label for="title">Le titre</label>
         <input type="text" name="title" id="title">
+        @error('title')
+            <p>Ce titre existe déja</p>
+        @enderror
     </div>
     <div>
         <label for="body">Le contenu de votre article</label>
         <textarea name="body" id="body" cols="30" rows="10"></textarea>
+        @error('body')
+            {{$message}}
+        @enderror
     </div>
     <input type="submit" value="Enregistrer l'article">
 </form>
