@@ -27,10 +27,25 @@
     @csrf
     <label for="body">Contenu de votre commentaire</label>
     <textarea id="body" name="body"></textarea>
+    @error('body')
+    <p>{{$message}}</p>
+    @enderror
     <input type="hidden" name="post_id" value="{{$post->id}}">
+    @error('post_id')
+    <p>Don't touch!!!</p>
+    @enderror
     <input type="hidden" name="post_slug" value="{{$post->slug}}">
     <input type="submit" value="Commenter ce post">
 </form>
+{{--@if ($errors->any())--}}
+{{--    <div class="alert alert-danger">--}}
+{{--        <ul>--}}
+{{--            @foreach ($errors->all() as $error)--}}
+{{--                <li>{{ $error }}</li>--}}
+{{--            @endforeach--}}
+{{--        </ul>--}}
+{{--    </div>--}}
+{{--@endif--}}
 
 <a href="/posts">Voir la liste des articles</a>
 </body>
