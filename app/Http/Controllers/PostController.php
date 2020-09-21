@@ -37,6 +37,9 @@ class PostController extends Controller
 
     public function store()
     {
+        
+
+
         $post = new Post();
 
         $post->title = \request('title');
