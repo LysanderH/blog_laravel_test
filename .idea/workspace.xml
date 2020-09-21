@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6803e931-bfd4-489f-b1f8-92a9dc105e49" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/blo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CommentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CommentFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/post/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +138,9 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hczaHzilWdQuBHPS741hWGOsu9" />
@@ -174,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600325231370</updated>
       <workItem from="1600325232682" duration="29275000" />
-      <workItem from="1600670135304" duration="2267000" />
+      <workItem from="1600670135304" duration="4743000" />
     </task>
     <servers />
   </component>
@@ -186,10 +192,10 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="476" y="667" key="NewPhpFileDialog/0.40.2560.1400@0.40.2560.1400" timestamp="1600343568057" />
-    <state width="531" height="446" key="SwitcherDM" timestamp="1600672985654">
+    <state width="531" height="446" key="SwitcherDM" timestamp="1600675202039">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
-    <state width="531" height="446" key="SwitcherDM/0.40.2560.1400@0.40.2560.1400" timestamp="1600672985654" />
+    <state width="531" height="446" key="SwitcherDM/0.40.2560.1400@0.40.2560.1400" timestamp="1600675202039" />
     <state x="303" y="360" width="672" height="678" key="search.everywhere.popup" timestamp="1600672733971">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>

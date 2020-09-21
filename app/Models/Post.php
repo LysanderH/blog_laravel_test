@@ -12,15 +12,18 @@ class Post extends Model
     protected $fillable = [
         'title',
         'slug',
-        'body'];
+        'body'
+    ];
+
+    protected $withCount = ['comments'];
 
     public function comments()
     {
         return $this->hasMany(Comment::class);
     }
 
-    public function getCommentsCountAttribute()
-    {
-        return count($this->comments);
-    }
+//    public function getCommentsCountAttribute()
+//    {
+//        return count($this->comments);
+//    }
 }
