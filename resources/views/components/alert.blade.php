@@ -1,3 +1,4 @@
 <div class="{{$type}}">
-    <p>{{ $message ?? '' }}</p>
+    <small>{{$mes}}</small>
+    <p>{{ $message }}</p>
 </div>

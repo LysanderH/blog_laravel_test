@@ -20,6 +20,13 @@ class Alert extends Component
         $this->message = $message;
     }
 
+    public function isVisible()
+    {
+        // Logic comes here
+
+        return true;
+    }
+
     /**
      * Get the view / contents that represent the component.
      *

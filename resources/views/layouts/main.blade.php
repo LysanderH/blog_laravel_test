@@ -9,7 +9,11 @@
 </head>
 <body>
 
-<x-alert type="error" :message="$message ?? ''"></x-alert>
+<x-alert {{$isError() ? 'type="error"' : ''}}  :message="{{$getMessage()}}">
+
+    <x-slot name="mes">Salut</x-slot>
+
+</x-alert>
 
 @yield('content')
 </body>
