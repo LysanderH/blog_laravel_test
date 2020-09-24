@@ -1,3 +1,3 @@
-<div>
-    <p>salut</p>
+<div class="{{$type}}">
+    <p>{{ $message ?? '' }}</p>
 </div>

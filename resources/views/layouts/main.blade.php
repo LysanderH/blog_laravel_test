@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<x-alert></x-alert>
+<x-alert type="error" :message="$message ?? ''"></x-alert>
 
 @yield('content')
 </body>

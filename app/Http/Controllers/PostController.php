@@ -33,7 +33,8 @@ class PostController extends Controller
 
     public function create()
     {
-        return view('post.create');
+        $message = "attention";
+        return view('post.create', compact('message'));
     }
 
     public function store(StorePostRequest $request)
