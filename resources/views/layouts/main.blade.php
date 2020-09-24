@@ -8,6 +8,9 @@
     @yield('title')
 </head>
 <body>
+
+<x-alert></x-alert>
+
 @yield('content')
 </body>
 </html>
